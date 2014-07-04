@@ -8,6 +8,6 @@ var db = level(location, { valueEncoding: "json" })
 
 var server = net.createServer(function (con) {
   con.pipe(multilevel.server(db)).pipe(con)
-}).listen(process.env.LEVEL_PORT || process.env.PORT || 3333)
+}).listen(process.env.LEVEL_PORT || 3333)
 
 module.exports = server
