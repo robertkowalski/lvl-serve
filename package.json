@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "serve a level db",
   "main": "index.js",
+  "bin": "./bin/lvl-serve.js",
   "dependencies": {
     "multilevel": "~5.5.0",
     "level": "~0.18.0"
